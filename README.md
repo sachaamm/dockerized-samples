@@ -11,9 +11,9 @@ cd LAMP-MySQL/ && docker-compose up # we build containers with docker-compose fi
 ```
 
 Now, your website folder is reachable here :
-http://localhost:8080/
-
-And your phpMyAdmin interface is reachable here ( password is defined in your docker-compose.yml file ):
+http://localhost:8080/  
+  
+And your phpMyAdmin interface is reachable here ( password is defined in your docker-compose.yml file ):  
 http://localhost:4002/
 
 
