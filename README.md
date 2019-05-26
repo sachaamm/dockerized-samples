@@ -14,7 +14,7 @@ Now, your website folder is reachable here :<br/>
 http://localhost:8080/  <br/>
   <br/>
 And your phpMyAdmin interface is reachable here ( password is defined in your docker-compose.yml file ):  <br/>
-http://localhost:4002/ <br/>
+http://localhost:4002/  ( Credentials: User >> root / Password >> example ) <br/> 
 <br/>
 
 
