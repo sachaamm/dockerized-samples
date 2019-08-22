@@ -48,7 +48,6 @@ docker ps
 
 # Print app output
 docker logs <container id> 
-
 # Output expected : Running on http://localhost:8080
 
 # Enter the container
