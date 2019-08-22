@@ -1,0 +1,2 @@
+#!/bin/bash
+cd .. && sh stopAndRemoveContainers.sh && cd NodeJS && docker build -t sachaamm/node . && docker run -p 8081:8080 -d sachaamm/node && echo "** Your NodeJS container is running on port 8081 **"
