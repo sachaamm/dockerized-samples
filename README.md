@@ -26,20 +26,38 @@ https://medium.com/@nbanzyme/easy-way-to-install-nvm-on-ubuntu-18-04-2cfb19ee539
 Using Docker cli & Dockerfile
 
 ```shell
-cd NodeJS
-sh stopAndRemoveContainers.sh  # we clean containers by stopping them and removing all containers. 
-cd LAMP-MySQL/ && docker-compose up # we build containers with docker-compose file. 
+cd NodeJS-Express
+sh launchNodeContainer.sh  # we clean containers by stopping them and removing all containers. 
 ```
-http://localhost:8080/  <br/>
+Result : http://localhost:8080/  <br/>
 
 Using Docker-compose
 
 ```shell
-cd
-sh stopAndRemoveContainers.sh  # we clean containers by stopping them and removing all containers. 
-cd LAMP-MySQL/ && docker-compose up # we build containers with docker-compose file. 
+cd NodeJS-Express
+docker-compose up
 ```
-http://localhost:8080/  <br/>
+Result : http://localhost:8080/  <br/>
 
+I'm passing env argument with ***node*** to specify if the container is built from docker-compose or from docker-cli with a Dockerfile.
+There are also bunch of useful commands you can use : 
 
+```shell
+# Get container ID
+$ docker ps
+
+# Print app output
+$ docker logs <container id>
+
+# Output expected : Running on http://localhost:8080
+
+# Get container ID
+$ docker ps
+
+# Print app output
+$ docker logs <container id>
+
+# Example
+Running on http://localhost:8080
+```
 
