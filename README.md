@@ -44,20 +44,14 @@ There are also bunch of useful commands you can use :
 
 ```shell
 # Get container ID
-$ docker ps
+docker ps
 
 # Print app output
-$ docker logs <container id> # <- someting like d4b065414f29
+docker logs <container id> 
 
 # Output expected : Running on http://localhost:8080
 
-# Get container ID
-$ docker ps
-
-# Print app output
-$ docker logs <container id>
-
-# Example
-Running on http://localhost:8080
+# Enter the container
+docker exec -it <container id> /bin/bash 
 ```
 
