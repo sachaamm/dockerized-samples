@@ -2,7 +2,7 @@
 Some samples to share my training on Docker to deploy fastest as possible Websites environnement.
 
 ## LAMP MySQL ( Php7.2 + Apache2 + MySql + PhpMyAdmin )
-A basic dockerized Lamp project for php 7.2 + MySQL + PhPMy@dmin. It's  thought as an easy way to dockerize my old-style Php crappy Websites :-)
+A basic dockerized Lamp project for php 7.2 + MySQL + PhPMy@dmin. It's  thought as an easy way to dockerize my old-style Php  Websites :-)
 
 ```shell
 /etc/init.d/mysql stop   # you must stop your MySql service running on port 3306 to let docker run MySql
@@ -18,14 +18,28 @@ http://localhost:4002/  ( Credentials: User >> root / Password >> example ) <br/
 <br/>
 
 
-## LAMP MariaDB ( Php7.2 + Apache2 + MariaDB + PhpMyAdmin )
-TODO !
+## NodeJS + Express ( NodeJS10 + Express4.16 )
+A basic NodeJS app running in a Docker container. In this sample, I show you 2 ways to launch your container, from cli, and from docker-compose. Thanks to theses relevant articles. <br/>
+https://nodejs.org/de/docs/guides/nodejs-docker-webapp/  <br/>
+https://medium.com/@nbanzyme/easy-way-to-install-nvm-on-ubuntu-18-04-2cfb19ee5391 <br/>
 
-## NodeJS + MySQL
-TODO !
+Using Docker cli & Dockerfile
 
-## Symfony + MongoDB 
-TODO !
+```shell
+cd NodeJS
+sh stopAndRemoveContainers.sh  # we clean containers by stopping them and removing all containers. 
+cd LAMP-MySQL/ && docker-compose up # we build containers with docker-compose file. 
+```
+http://localhost:8080/  <br/>
 
-## React
-TODO !
+Using Docker-compose
+
+```shell
+cd
+sh stopAndRemoveContainers.sh  # we clean containers by stopping them and removing all containers. 
+cd LAMP-MySQL/ && docker-compose up # we build containers with docker-compose file. 
+```
+http://localhost:8080/  <br/>
+
+
+
