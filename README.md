@@ -27,7 +27,7 @@ Using Docker cli & Dockerfile
 
 ```shell
 cd NodeJS-Express
-sh launchNodeContainer.sh  # we clean containers by stopping them and removing all containers. 
+sh launchNodeContainer.sh  # open the shell script for more info
 ```
 Result : http://localhost:8081/  <br/>
 
@@ -47,7 +47,7 @@ There are also bunch of useful commands you can use :
 $ docker ps
 
 # Print app output
-$ docker logs <container id>
+$ docker logs <container id> # <- someting like d4b065414f29
 
 # Output expected : Running on http://localhost:8080
 
