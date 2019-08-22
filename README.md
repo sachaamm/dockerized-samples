@@ -19,7 +19,7 @@ http://localhost:4002/  ( Credentials: User >> root / Password >> example ) <br/
 
 
 ## NodeJS + Express ( NodeJS10 + Express4.16 )
-A basic NodeJS app running in a Docker container. In this sample, I show you 2 ways to launch your container, from cli, and from docker-compose. Thanks to theses relevant articles. <br/>
+A basic NodeJS middleware app using Express running in a Docker container. In this sample, I show you 2 ways to launch your container, from cli, and from docker-compose. Thanks to theses relevant articles. <br/>
 https://nodejs.org/de/docs/guides/nodejs-docker-webapp/  <br/>
 https://medium.com/@nbanzyme/easy-way-to-install-nvm-on-ubuntu-18-04-2cfb19ee5391 <br/>
 
