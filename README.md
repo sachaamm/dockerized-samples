@@ -29,7 +29,7 @@ Using Docker cli & Dockerfile
 cd NodeJS-Express
 sh launchNodeContainer.sh  # we clean containers by stopping them and removing all containers. 
 ```
-Result : http://localhost:8080/  <br/>
+Result : http://localhost:8081/  <br/>
 
 Using Docker-compose
 
@@ -37,7 +37,7 @@ Using Docker-compose
 cd NodeJS-Express
 docker-compose up
 ```
-Result : http://localhost:8080/  <br/>
+Result : http://localhost:8082/  <br/>
 
 I'm passing env argument with ***node*** to specify if the container is built from docker-compose or from docker-cli with a Dockerfile.
 There are also bunch of useful commands you can use : 
