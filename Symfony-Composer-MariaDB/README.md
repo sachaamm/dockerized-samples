@@ -7,14 +7,21 @@ This is an helloWorld Question&Answer API sample using Symfony and MariaDB via D
 cd my app && composer install
 docker-compose up
 ```
+And voilà! the symfony app is running on http://localhost:8001
 
 ## Create a question via API
 You can send REST Requests via Postman to create Questions entities
+Ex: a POST Request to http://localhost:8001/question in order to create a new question. One answer is associated in this case.
 
 ```json
 {
 	"title": "What is the sense of life ?",
-	"promoted": true
-	
+	"promoted": true,
+	"status": "draft",
+	"answers": [{
+		"channel": "faq",
+		"body": "Being happy, transmit happiness around you and explore the world to discover yourself through the other"
+	}]
+
 }
 ```
