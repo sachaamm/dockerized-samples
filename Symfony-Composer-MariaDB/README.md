@@ -9,6 +9,13 @@ docker-compose up
 ```
 And voilà! the symfony app is running on http://localhost:8001
 
+## Create database schemas
+```shell
+root@root:/home# docker exec -it myapp /bin/bash
+root@c2c86971495c:/app# cd myapp
+root@c2c86971495c:/app# php bin/console doctrine:schema:update --force
+```
+
 ## Create a question via API
 You can send REST Requests via Postman to create Questions entities
 Ex: a POST Request to http://localhost:8001/question in order to create a new question. One answer is associated in this case.
