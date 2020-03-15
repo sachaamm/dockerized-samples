@@ -4,7 +4,7 @@ This is an helloWorld Question&Answer API sample using Symfony and MariaDB via D
 
 ## Installation 
 ```shell
-cd my app && composer install
+cd myapp && composer install
 docker-compose up
 ```
 And voilà! the symfony app is running on http://localhost:8001
