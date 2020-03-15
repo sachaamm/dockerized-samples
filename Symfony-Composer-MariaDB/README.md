@@ -34,3 +34,12 @@ Ex: a POST Request to http://localhost:8001/question in order to create a new qu
 
 }
 ```
+
+## Export questions to csv file
+You can export questions to a csv file
+```shell
+root@root:/home# docker exec -it myapp /bin/bash
+root@c2c86971495c:/app# cd myapp
+root@c2c86971495c:/app# php bin/console app:csv-export
+```
+
