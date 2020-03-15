@@ -2,5 +2,6 @@
 
 ## Installation 
 ```shell
-composer install
+cd my app && composer install
+docker-compose up
 ```
