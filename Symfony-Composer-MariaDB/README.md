@@ -13,7 +13,7 @@ And voilà! the symfony app is running on http://localhost:8001
 ```shell
 root@root:/home# docker exec -it myapp /bin/bash
 root@c2c86971495c:/app# cd myapp
-root@c2c86971495c:/app# php bin/console doctrine:schema:update --force
+root@c2c86971495c:/app/myapp# php bin/console doctrine:schema:update --force
 ```
 
 ## Create a question via API
