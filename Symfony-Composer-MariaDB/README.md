@@ -27,7 +27,9 @@ Ex: a POST Request to http://localhost:8001/question in order to create a new qu
 	"status": "draft",
 	"answers": [{
 		"channel": "faq",
-		"body": "Being happy, transmit happiness around you and explore the world to discover yourself through the other"
+		"body": "Being happy, 
+		transmit happiness around you 
+		and explore the world to discover yourself through the other"
 	}]
 
 }
